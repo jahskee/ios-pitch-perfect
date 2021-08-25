@@ -1,27 +1,21 @@
 //
-//  SoundRecorder.swift
+//  PlaySoundVC.swift
 //  pitch-perfect
 //
-//  Created by Mac on 8/24/21.
+//  Created by Mac on 8/25/21.
 //
 
 import UIKit
 
-class SoundRecorderVC: UIViewController {
+class PlaySoundVC: UIViewController {
 
-    @IBOutlet weak var button: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func handleButtonClick(_ sender: Any) {
-        print("testing...!")
-        button.setTitle("Test", for: .normal)
-    }
-    
+
     /*
     // MARK: - Navigation
 

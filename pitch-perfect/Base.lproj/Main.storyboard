@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sound RecorderVC-->
+        <!--Record SoundVC-->
         <scene sceneID="xkK-f4-QPO">
             <objects>
-                <viewController id="53L-Ko-dgy" customClass="SoundRecorderVC" customModule="pitch_perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="53L-Ko-dgy" customClass="RecordSoundVC" customModule="pitch_perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rxf-fo-D2y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,11 +34,28 @@
                     <navigationItem key="navigationItem" id="4wV-UJ-CsN"/>
                     <connections>
                         <outlet property="button" destination="41r-Qo-c7R" id="n5v-k5-HHg"/>
+                        <segue destination="eLr-ap-eIN" kind="push" id="8RQ-BG-dN8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q08-ph-cre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347.82608695652175" y="-229.01785714285714"/>
+            <point key="canvasLocation" x="312" y="-258"/>
+        </scene>
+        <!--Play SoundVC-->
+        <scene sceneID="vq7-Xc-dzt">
+            <objects>
+                <viewController id="eLr-ap-eIN" customClass="PlaySoundVC" customModule="pitch_perfect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vki-Td-IPR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="amm-9g-sel"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1JA-NV-ODi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8SS-vf-bGN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="-258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pWr-CV-eG9">
@@ -56,7 +73,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slj-mg-UjU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-562.31884057971024" y="-229.01785714285714"/>
+            <point key="canvasLocation" x="-584" y="-258"/>
         </scene>
     </scenes>
     <resources>
