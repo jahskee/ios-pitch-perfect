@@ -20,7 +20,7 @@
                                 <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="handleButtonClick:" destination="53L-Ko-dgy" eventType="touchUpInside" id="czb-eb-Xh5"/>
+                                    <action selector="handlePlaySound:" destination="53L-Ko-dgy" eventType="touchUpInside" id="1G7-VR-gD0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -34,28 +34,40 @@
                     <navigationItem key="navigationItem" id="4wV-UJ-CsN"/>
                     <connections>
                         <outlet property="button" destination="41r-Qo-c7R" id="n5v-k5-HHg"/>
-                        <segue destination="eLr-ap-eIN" kind="push" id="8RQ-BG-dN8"/>
+                        <segue destination="eLr-ap-eIN" kind="show" id="2Kl-iI-r3P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q08-ph-cre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="312" y="-258"/>
+            <point key="canvasLocation" x="311.59420289855075" y="-258.48214285714283"/>
         </scene>
         <!--Play SoundVC-->
         <scene sceneID="vq7-Xc-dzt">
             <objects>
-                <viewController id="eLr-ap-eIN" customClass="PlaySoundVC" customModule="pitch_perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playSoundVC" id="eLr-ap-eIN" customClass="PlaySoundVC" customModule="pitch_perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vki-Td-IPR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDI-sh-2nc">
+                                <rect key="frame" x="164.5" y="437.5" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="amm-9g-sel"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BDI-sh-2nc" firstAttribute="centerY" secondItem="Vki-Td-IPR" secondAttribute="centerY" id="Hhf-PW-Pw2"/>
+                            <constraint firstItem="BDI-sh-2nc" firstAttribute="centerX" secondItem="Vki-Td-IPR" secondAttribute="centerX" id="ldD-rl-m6v"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1JA-NV-ODi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SS-vf-bGN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="-258"/>
+            <point key="canvasLocation" x="1183" y="-258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pWr-CV-eG9">

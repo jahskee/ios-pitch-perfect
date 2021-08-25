@@ -8,7 +8,6 @@
 import UIKit
 
 class RecordSoundVC: UIViewController {
-
     @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
@@ -17,11 +16,13 @@ class RecordSoundVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func handleButtonClick(_ sender: Any) {
-        print("testing...!")
-        button.setTitle("Test", for: .normal)
-    }
     
+    @IBAction func handlePlaySound(_ sender: Any) {
+        // Get a StoryNodeController from the Storyboard
+       let controller = self.storyboard!.instantiateViewController(withIdentifier: "playSoundVC") as! PlaySoundVC
+       // Push the new controller onto the stack
+       self.navigationController!.pushViewController(controller, animated: true)
+    }
     /*
     // MARK: - Navigation
 
